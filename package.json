@@ -1,0 +1,29 @@
+{
+  "name": "shop-cart-don-arturo",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "dev:backend": "pnpm --filter @shop-cart-don-arturo/backend",
+    "db:info": "flyway -configFiles=database/flyway.conf info",
+    "db:validate": "flyway -configFiles=database/flyway.conf validate",
+    "db:migrate": "flyway -configFiles=database/flyway.conf migrate"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.15.0",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@12.15.0",
+  "type": "module",
+  "devDependencies": {
+    "dotenv-cli": "^11.0.0"
+  }
+}
